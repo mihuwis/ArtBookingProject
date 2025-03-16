@@ -17,7 +17,7 @@ namespace BusinessModel.Entities
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public USerRole? UserRole { get; set; }
+        public UserRole? UserRole { get; set; }
 
         public int? ArtOrganizationId { get; set; }
 

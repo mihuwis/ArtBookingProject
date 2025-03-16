@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessModel.Enums
 {
-    public enum USerRole
+    public enum UserRole
     {
         
     }
