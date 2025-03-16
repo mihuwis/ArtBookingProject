@@ -1,0 +1,13 @@
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\bin\Debug\net8.0\BusinessModel.deps.json
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\bin\Debug\net8.0\BusinessModel.dll
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\bin\Debug\net8.0\BusinessModel.pdb
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\BusinessModel.csproj.AssemblyReference.cache
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\BusinessModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\BusinessModel.AssemblyInfoInputs.cache
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\BusinessModel.AssemblyInfo.cs
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\BusinessModel.csproj.CoreCompileInputs.cache
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\BusinessModel.sourcelink.json
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\BusinessModel.dll
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\refint\BusinessModel.dll
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\BusinessModel.pdb
+C:\Users\micha\developer\wsei\BackEnd_sem3\BusinessModel\obj\Debug\net8.0\ref\BusinessModel.dll
