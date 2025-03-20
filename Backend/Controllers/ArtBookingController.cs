@@ -39,7 +39,7 @@ namespace Backend.Controllers
             }
             return Ok(organization);
         }
-
+        // Get All - Punkt C - czyli pobranie wszystkich
         [HttpGet]
         public ActionResult<IEnumerable<ArtOrganization>> GetAllOrganizations()
         {
@@ -47,6 +47,7 @@ namespace Backend.Controllers
             return Ok(organizations);
         }
 
+        // Edycja 
         [HttpPut("{id}")]
         public ActionResult UpdateOrganization(int id, [FromBody] ArtOrganization updatedOrganization)
         {
@@ -86,7 +87,7 @@ namespace Backend.Controllers
         }
 
 
-        // Delete an organization
+        // Delete - Punkt B - czyli usuniecie
         [HttpDelete("{id}")]
         public ActionResult DeleteOrganization(int id)
         {
