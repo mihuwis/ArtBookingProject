@@ -16,7 +16,7 @@ namespace BusinessModel.Data
         public DbSet<Area> Areas { get; set; }
         public DbSet<ArtEvent> ArtEvents { get; set; }
         public DbSet<ArtOrganization> ArtOrganizations { get; set; }
-        public DbSet<PriceEntry> PriceEnties { get; set; }
+        public DbSet<PriceEntry> PriceEntries { get; set; }
         public DbSet<PriceList> PriceLists { get; set; }
         public DbSet<ScheduleItem> ScheduleItems { get; set; }
         public DbSet<Seat> Seats { get; set; }
