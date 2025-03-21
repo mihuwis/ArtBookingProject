@@ -15,6 +15,14 @@ namespace Backend.Controllers
         {
             _dbContext = dbContext;
         }
+        
+        [HttpPost]
+        public ActionResult<Venue> Create([FromBody] Venue entity)
+        {
+            _dbContext.Venues.Add(entity);
+            _dbContext.SaveChanges();
+            return CreatedAtAction(nameof(GetById), new { id = entity.VenueId }, entity);
+        }
 
         [HttpGet]
         public ActionResult<IEnumerable<Venue>> GetAll()
@@ -28,14 +36,6 @@ namespace Backend.Controllers
             var entity = _dbContext.Venues.Include(v => v.Areas).FirstOrDefault(v => v.VenueId == id);
             if (entity == null) return NotFound();
             return Ok(entity);
-        }
-
-        [HttpPost]
-        public ActionResult<Venue> Create([FromBody] Venue entity)
-        {
-            _dbContext.Venues.Add(entity);
-            _dbContext.SaveChanges();
-            return CreatedAtAction(nameof(GetById), new { id = entity.VenueId }, entity);
         }
 
         [HttpPut("{id}")]

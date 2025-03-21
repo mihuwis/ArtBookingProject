@@ -17,6 +17,17 @@ namespace Backend.Controllers
         {
             _dbContext = dbContext;
         }
+        
+        // CRUD 
+        
+        [HttpPost]
+        public ActionResult<ArtEvent> Create([FromBody] ArtEvent entity)
+        {
+            _dbContext.ArtEvents.Add(entity);
+            _dbContext.SaveChanges();
+            return CreatedAtAction(nameof(GetById), new { id = entity.ArtEventId }, entity);
+        }
+
 
         [HttpGet]
         public ActionResult<IEnumerable<ArtEvent>> GetAll()
@@ -30,14 +41,6 @@ namespace Backend.Controllers
             var entity = _dbContext.ArtEvents.Include(e => e.ScheduleItems).FirstOrDefault(e => e.ArtEventId == id);
             if (entity == null) return NotFound();
             return Ok(entity);
-        }
-
-        [HttpPost]
-        public ActionResult<ArtEvent> Create([FromBody] ArtEvent entity)
-        {
-            _dbContext.ArtEvents.Add(entity);
-            _dbContext.SaveChanges();
-            return CreatedAtAction(nameof(GetById), new { id = entity.ArtEventId }, entity);
         }
 
         [HttpPut("{id}")]
