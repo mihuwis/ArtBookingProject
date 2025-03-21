@@ -17,7 +17,7 @@ public class PriceListController : ControllerBase
         _dbContext = dbContext;
     }
 
-    [HttpGet]
+    [HttpPost]
     public ActionResult<PriceList> CreatePriceList([FromBody] PriceList priceList)
     {
         if (priceList == null)
